@@ -1,4 +1,4 @@
-package dev.zalaya.sentinel.domain;
+package dev.zalaya.sentinel.domain.model;
 
 import lombok.Value;
 
