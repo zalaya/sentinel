@@ -12,4 +12,10 @@ public class Token {
     Instant issuedAt;
     Instant expiresAt;
 
+    public Token(UUID userId, Instant expiresAt) {
+        this.userId = userId;
+        this.issuedAt = Instant.now();
+        this.expiresAt = expiresAt;
+    }
+
 }

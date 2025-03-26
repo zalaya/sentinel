@@ -26,18 +26,16 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- PASSWORD4J -->
-        <dependency>
-            <groupId>com.password4j</groupId>
-            <artifactId>password4j</artifactId>
-            <version>1.8.2</version>
-            <scope>compile</scope>
-        </dependency>
-
         <!-- JUNIT -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+            <version>5.12.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
             <version>5.12.1</version>
             <scope>test</scope>
         </dependency>
