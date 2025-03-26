@@ -1,1 +1,1 @@
-- Documentar los atributos de las clases de los modelos de dominio.
+- El usuario debe de poder iniciar sesión metiendo su usuario o email y contraseña, si el usuario y email coinciden el usuario podrá pasar correctamente. Una vez el usuario haya iniciado sesión se le retornará un Token, el cual servirá independientemente del cliente durante un tiempo determinado por properties.

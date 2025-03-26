@@ -9,7 +9,12 @@ public class User {
 
     UUID id;
     String username;
-    String hashedPassword;
-    boolean enabled;
+    String password;
+
+    public User(String username, String password) {
+        this.id = UUID.randomUUID();
+        this.username = username;
+        this.password = password;
+    }
 
 }
