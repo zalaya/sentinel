@@ -1,0 +1,1 @@
+- Documentar los atributos de las clases de los modelos de dominio.

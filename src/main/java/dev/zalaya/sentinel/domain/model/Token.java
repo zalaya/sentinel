@@ -11,7 +11,7 @@ public class Token {
     UUID id;
     UUID userId;
     UUID clientId;
-    Instant issued;
-    Instant expires;
+    Instant issuedAt;
+    Instant expiresAt;
 
 }
