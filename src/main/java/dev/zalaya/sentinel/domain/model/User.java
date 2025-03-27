@@ -1,5 +1,8 @@
 package dev.zalaya.sentinel.domain.model;
 
+import dev.zalaya.sentinel.domain.vo.Password;
+import dev.zalaya.sentinel.domain.vo.Username;
+
 import lombok.Value;
 
 import java.util.UUID;
@@ -8,28 +11,13 @@ import java.util.UUID;
 public class User {
 
     UUID id;
-    String username;
-    String password;
+    Username username;
+    Password password;
 
     public User(String username, String password) {
-        validateUsername(username);
-        validatePassword(password);
-
         this.id = UUID.randomUUID();
-        this.username = username;
-        this.password = password;
-    }
-
-    private void validateUsername(String username) {
-        if (username == null || username.isBlank()) {
-            throw new IllegalArgumentException("Username is invalid");
-        }
-    }
-
-    private void validatePassword(String password) {
-        if (password == null || password.isBlank()) {
-            throw new IllegalArgumentException("Password is invalid");
-        }
+        this.username = new Username(username);
+        this.password = new Password(password);
     }
 
 }
