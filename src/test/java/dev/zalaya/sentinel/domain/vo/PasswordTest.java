@@ -13,9 +13,6 @@ class PasswordTest {
     @NullAndEmptySource
     @ValueSource(strings = {" "})
     void givenInvalidPassword_whenCreatingPassword_thenThrowsException(String value) {
-        // Given
-        String password = "1234";
-
         // When
         Executable executable = () -> new Password(value);
 

@@ -13,9 +13,6 @@ class UsernameTest {
     @NullAndEmptySource
     @ValueSource(strings = {" "})
     void givenInvalidUsername_whenCreatingUsername_thenThrowsException(String value) {
-        // Given
-        String password = "1234";
-
         // When
         Executable executable = () -> new Username(value);
 
