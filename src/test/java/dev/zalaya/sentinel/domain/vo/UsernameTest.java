@@ -12,7 +12,7 @@ class UsernameTest {
     @ParameterizedTest
     @NullAndEmptySource
     @ValueSource(strings = {" "})
-    void givenInvalidUsername_whenCreatingUsername_thenThrowsException(String value) {
+    void shouldThrowException_whenCreatingUsername_withInvalidValue(String value) {
         // When
         Executable executable = () -> new Username(value);
 
