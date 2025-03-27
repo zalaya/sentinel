@@ -14,7 +14,7 @@ class UserTest {
     @ValueSource(strings = {" "})
     void shouldThrowException_whenCreatingUser_withInvalidUsername(String username) {
         // Given
-        String password = "1234";
+        String password = "Password";
 
         // When
         Executable executable = () -> new User(username, password);
@@ -28,7 +28,7 @@ class UserTest {
     @ValueSource(strings = {" "})
     void shouldThrowException_whenCreatingUser_withInvalidPassword(String password) {
         // Given
-        String username = "1234";
+        String username = "Username";
 
         // When
         Executable executable = () -> new User(username, password);
