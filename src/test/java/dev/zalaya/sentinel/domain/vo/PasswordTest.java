@@ -11,7 +11,7 @@ class PasswordTest {
 
     @ParameterizedTest
     @NullAndEmptySource
-    @ValueSource(strings = {" "})
+    @ValueSource(strings = {" ", "\t", "\n"})
     void shouldThrowException_whenCreatingPassword_withInvalidValue(String value) {
         // When
         Executable executable = () -> new Password(value);

@@ -11,7 +11,7 @@ class UserTest {
 
     @ParameterizedTest
     @NullAndEmptySource
-    @ValueSource(strings = {" "})
+    @ValueSource(strings = {" ", "\t", "\n"})
     void shouldThrowException_whenCreatingUser_withInvalidUsername(String username) {
         // Given
         String password = "Password";
@@ -25,7 +25,7 @@ class UserTest {
 
     @ParameterizedTest
     @NullAndEmptySource
-    @ValueSource(strings = {" "})
+    @ValueSource(strings = {" ", "\t", "\n"})
     void shouldThrowException_whenCreatingUser_withInvalidPassword(String password) {
         // Given
         String username = "Username";

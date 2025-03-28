@@ -11,7 +11,7 @@ class UsernameTest {
 
     @ParameterizedTest
     @NullAndEmptySource
-    @ValueSource(strings = {" "})
+    @ValueSource(strings = {" ", "\t", "\n"})
     void shouldThrowException_whenCreatingUsername_withInvalidValue(String value) {
         // When
         Executable executable = () -> new Username(value);
